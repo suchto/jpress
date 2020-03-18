@@ -23,6 +23,7 @@ import com.jfinal.kit.Ret;
 import io.jboot.utils.CookieUtil;
 import io.jboot.utils.StrUtil;
 import io.jboot.web.controller.annotation.RequestMapping;
+import io.jboot.web.cors.EnableCORS;
 import io.jboot.web.validate.EmptyValidate;
 import io.jboot.web.validate.Form;
 import io.jpress.JPressConsts;
@@ -43,6 +44,7 @@ import java.util.Date;
  * @Package io.jpress.web
  */
 @RequestMapping("/user")
+@EnableCORS
 public class UserController extends TemplateControllerBase {
 
     private static final String default_user_login_template = "/WEB-INF/views/ucenter/user_login.html";
