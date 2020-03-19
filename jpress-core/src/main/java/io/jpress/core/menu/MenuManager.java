@@ -214,6 +214,14 @@ public class MenuManager implements JbootEventListener {
         favoriteMenuGroup.setOrder(99);
         ucenterMenus.add(favoriteMenuGroup);
 
+        //test
+        MenuGroup questionsMenuGroup = new MenuGroup();
+        questionsMenuGroup.setId("questions");
+        questionsMenuGroup.setText("网络问答");
+        questionsMenuGroup.setIcon("<i class=\"fa fa-fw fa-bookmark\"></i>");
+        questionsMenuGroup.setOrder(99);
+        ucenterMenus.add(questionsMenuGroup);
+
         addMenuItems(buildUCenterMenuItems());
     }
 
