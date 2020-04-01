@@ -243,10 +243,11 @@ public class UserController extends TemplateControllerBase {
             return;
         }
 
-        if (validateCaptcha("captcha") == false) {
-            renderJson(Ret.fail().set("message", "验证码不正确").set("errorCode", 7));
-            return;
-        }
+        //TODO [commented by wl]
+        // if (validateCaptcha("captcha") == false) {
+        //     renderJson(Ret.fail().set("message", "验证码不正确").set("errorCode", 7));
+        //     return;
+        // }
 
         String phoneNumber = getPara("phone");
 
